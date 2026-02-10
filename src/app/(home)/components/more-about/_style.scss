@@ -1,0 +1,54 @@
+@use "@/scss/media.scss";
+@use "@/scss/variables.scss";
+
+$card-border-color: #e9e9e9;
+
+section.more-about {
+  background-color: #f9f9f9;
+  padding: variables.$default-padding;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid $card-border-color;
+  border-bottom: 1px solid $card-border-color;
+
+  @include media.responsive(tablet) {
+    padding: variables.$default-mobile-padding;
+  }
+
+  .title {
+    font-size: 1.3rem;
+    color: #272666;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: #536471;
+  }
+
+  span.smaller-title {
+    margin-top: 1.5rem;
+    color: #6b7589;
+    font-size: 1.1rem;
+  }
+
+  div.formation {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 25%;
+    background: linear-gradient(90deg, #f0f0f0, #f7e9e9, #ffefe9);
+    border-radius: 1rem;
+
+    @include media.responsive(tablet) {
+      padding: 3rem 5%;
+    }
+
+    p {
+      background: -webkit-linear-gradient(0deg, #2a2a2a, #82372d, #ff2a2a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

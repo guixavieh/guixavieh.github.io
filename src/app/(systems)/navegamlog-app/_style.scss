@@ -1,0 +1,83 @@
+@use "@/scss/media.scss";
+@use "@/scss/variables.scss";
+
+.page.system-page.navegamlog-app {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+
+  .padded {
+    padding: 2rem;
+    overflow: hidden;
+  }
+
+  .image-grid {
+    .container {
+      height: 20rem;
+      flex-grow: 1;
+      background-color: #2177a2;
+      border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+
+      img {
+        max-height: 100%;
+        max-width: 100%;
+        width: auto;
+      }
+
+      &.fill {
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      &.centered {
+        @include media.responsive(tablet) {
+          img {
+            position: absolute;
+            width: 50%;
+            top: 10%;
+            border-radius: 0.5rem;
+            height: auto;
+            object-fit: cover;
+            object-position: top;
+          }
+        }
+      }
+    }
+
+    .full {
+      background-color: #2177a2;
+      border-radius: 1rem;
+      display: flex;
+      align-items: flex-end;
+      height: 15rem;
+      justify-content: center;
+      gap: 2rem;
+      overflow: hidden;
+      padding-left: 4rem;
+
+      img {
+        max-height: 95%;
+        width: auto;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+
+        &.wide {
+          width: 20rem;
+          object-fit: cover;
+          object-position: top;
+        }
+      }
+    }
+
+    > img {
+      max-height: 20rem;
+    }
+  }
+}

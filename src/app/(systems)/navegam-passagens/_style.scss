@@ -1,0 +1,47 @@
+.page.system-page.navegam-passagens {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+
+  .padded {
+    padding: 2rem;
+    overflow: hidden;
+  }
+
+  .image-grid {
+    .container {
+      background-color: #2177a2;
+
+      &.first {
+        position: relative;
+        overflow: hidden;
+
+        img {
+          position: absolute;
+          top: 10%;
+          width: 70%;
+          height: auto;
+          min-height: 90%;
+          object-fit: cover;
+          left: 50%;
+          transform: translateX(-50%);
+          border-radius: 0.5rem;
+        }
+      }
+
+      &.second {
+        position: relative;
+        overflow: hidden;
+
+        img {
+          position: absolute;
+          width: 80%;
+          height: auto;
+          top: 10%;
+          right: 0;
+          border-radius: 0.5rem;
+        }
+      }
+    }
+  }
+}

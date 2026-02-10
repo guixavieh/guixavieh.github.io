@@ -1,0 +1,40 @@
+@use "@/scss/media.scss";
+
+.component.divided-scroll {
+  display: flex;
+  overflow: auto;
+  justify-content: space-between;
+
+  > .left-side {
+    max-width: 40%;
+  }
+
+  > .right-side {
+    scroll-behavior: smooth;
+
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    flex-grow: 1;
+    border-left: 1px solid #0000001a;
+    min-height: 100vh;
+  }
+
+  @include media.responsive(tablet) {
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 100vh;
+
+    > .left-side {
+      max-width: unset;
+    }
+
+    > .right-side {
+      max-width: unset;
+      border-left: unset;
+      min-height: unset;
+      overflow: unset;
+    }
+  }
+}

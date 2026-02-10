@@ -1,0 +1,98 @@
+@use "@/scss/media.scss";
+@use "@/scss/variables.scss";
+
+.page.system-page.onisafra {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+
+  .padded {
+    padding: 2rem;
+    overflow: hidden;
+  }
+
+  .image-grid {
+    .container {
+      height: 20rem;
+      flex-grow: 1;
+      background-color: #2177a2;
+      border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+
+      img {
+        max-height: 100%;
+        max-width: 100%;
+        width: auto;
+      }
+    }
+
+    .full {
+      background-color: #46474e;
+      border-radius: 1rem;
+      display: flex;
+      height: 15rem;
+      justify-content: flex-start;
+      align-items: center;
+
+      overflow: hidden;
+      gap: 2rem;
+      box-sizing: border-box;
+      flex-direction: column;
+
+      .row {
+        display: flex;
+        gap: 2rem;
+        height: 40%;
+        transform: translate(0, 2rem);
+
+        img {
+          height: 100%;
+          width: auto;
+          border-radius: 0.5rem;
+        }
+      }
+
+      @include media.responsive(tablet) {
+        .row {
+          transform: translate(2rem, 4rem);
+        }
+      }
+    }
+
+    > img {
+      max-height: 20rem;
+    }
+  }
+
+  .highlight {
+    margin-top: 1rem;
+    margin-inline: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(90deg, #f0f0f0, #fcf6d5);
+    border-radius: 1rem;
+    gap: 1rem;
+    padding: 1rem;
+
+    > span {
+      display: flex;
+      align-items: center;
+      gap: 0.2rem;
+      background-color: #fcfcfc;
+      border-radius: 1rem;
+      padding: 0.5rem 0.8rem;
+      color: #b38811;
+    }
+
+    p {
+      color: #7c5b00;
+      padding: 0rem 10%;
+    }
+  }
+}

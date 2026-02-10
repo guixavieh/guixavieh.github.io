@@ -1,0 +1,61 @@
+@use "@/scss/media.scss";
+@use "@/scss/variables.scss";
+
+.page.system-page.forestfi {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+
+  .padded {
+    padding: 2rem;
+    overflow: hidden;
+  }
+
+  .image-grid {
+    .full {
+      background-color: #1e332c;
+      border-radius: 1rem;
+      display: flex;
+      align-items: flex-end;
+      height: 15rem;
+      justify-content: center;
+      gap: 2rem;
+      overflow: hidden;
+
+      @include media.responsive(tablet) {
+        img:nth-child(2) {
+          display: none;
+          max-width: 90%;
+        }
+      }
+
+      img {
+        max-height: 95%;
+        width: auto;
+
+        &.wide {
+          width: 20rem;
+          object-fit: cover;
+          object-position: top;
+        }
+      }
+    }
+
+    .container {
+      height: 20rem;
+      flex-grow: 1;
+      background-color: #1e332c;
+      border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+
+      img {
+        max-height: 100%;
+        max-width: 100%;
+        width: auto;
+      }
+    }
+  }
+}

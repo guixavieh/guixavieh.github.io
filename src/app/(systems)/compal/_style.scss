@@ -1,0 +1,69 @@
+.page.system-page.compal {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+
+  .padded {
+    padding: 2rem;
+    overflow: hidden;
+  }
+
+  .image-grid {
+    .container {
+      background-color: #1e332c;
+
+      &.fill {
+        img {
+          max-width: 100%;
+          max-height: 100%;
+          object-fit: cover;
+          object-position: top;
+        }
+      }
+
+      &.full {
+        position: relative;
+        overlay: hidden;
+
+        img {
+          position: absolute;
+          width: 50%;
+          max-width: 80%;
+          object-fit: cover;
+          object-position: top left;
+          bottom: 0;
+          border-radius: 0.5rem;
+          left: 50%;
+          top: 10%;
+          transform: translate(-50%);
+          width: auto;
+        }
+      }
+
+      &.fourth {
+        position: relative;
+
+        img {
+          position: absolute;
+          top: 10%;
+          right: -5%;
+          border-radius: 0.5rem;
+          width: 90%;
+        }
+      }
+
+      &.fifth {
+        position: relative;
+
+        img {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          height: 90%;
+          width: auto;
+        }
+      }
+    }
+  }
+}
