@@ -37,7 +37,7 @@ export default function SystemSummary(props: IProps) {
           </span>
         ))}
       </div>
-      <button className="contact">Vamos conversar</button>
+      <Link href={`/#contact`}><button className="contact">Vamos conversar</button></Link>
     </div>
   );
 }

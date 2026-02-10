@@ -32,8 +32,10 @@ export function SocialMedia(props: {
   children: React.ReactNode | React.ReactNode[];
 }) {
   return (
-    <Link target="_blank" href={props.href} className="component social-media">
-      {props.children}
+    <Link target="_blank" href={props.href} >
+      <button className="component social-media">
+        <div className="content">{props.children}</div>
+      </button>
     </Link>
   );
 }

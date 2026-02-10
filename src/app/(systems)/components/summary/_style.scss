@@ -17,16 +17,17 @@
     cursor: pointer;
   }
 
-  > .header {
+  >.header {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+
     .top {
       display: flex;
       align-items: center;
       gap: 0.5rem;
 
-      > .title {
+      >.title {
         font-size: 1.2rem;
         font-weight: 500;
         color: #272666;
@@ -70,18 +71,19 @@
     }
   }
 
-  > a {
+  >a {
     width: 100%;
   }
 
-  button.contact {
+  a button.contact {
     background-color: #fc1e1e;
     border-color: #fc1e1e;
     color: white;
     border: 1px solid #fc1e1e;
     border-radius: 1rem;
-    padding: 0.3rem;
+    padding: 0.5rem 0.3rem;
     font-weight: bold;
     cursor: pointer;
+    width: 100%;
   }
 }

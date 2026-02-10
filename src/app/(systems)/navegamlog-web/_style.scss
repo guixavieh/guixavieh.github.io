@@ -6,6 +6,12 @@
   flex-direction: column;
   overflow: auto;
 
+  .component.log-topbar {
+    @include media.responsive(tablet) {
+      display: none;
+    }
+  }
+
   .padded {
     padding: variables.$default-padding;
     overflow: hidden;
@@ -97,6 +103,7 @@
 
         &:not(.triple) {
           height: 10rem;
+
           img {
             position: absolute;
             right: -8%;
@@ -134,6 +141,7 @@
 
   .quad-gif {
     width: 100%;
+
     img {
       width: 100%;
       height: auto;

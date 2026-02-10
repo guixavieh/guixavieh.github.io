@@ -1,16 +1,14 @@
 import Link from "next/link";
 import "./_style.scss";
+import Image from "next/image";
 
 function ProjectShowcase(props: { bgUrl: string; name: string; href: string }) {
   return (
-    <div
-      style={{ background: `url("${props.bgUrl}")`, backgroundSize: "cover" }}
-      className="component project-showcase"
-    >
-      <Link href={props.href}>
-        <div className="floating-tip">{props.name}</div>
-      </Link>
-    </div>
+    <Link className="component project-showcase" href={props.href}>
+
+      <Image src={props.bgUrl} alt="cover" height={1000} width={1000} />
+      <div className="floating-tip">{props.name}</div>
+    </Link>
   );
 }
 

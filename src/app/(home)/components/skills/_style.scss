@@ -7,7 +7,7 @@ section.skills {
   border-top: 1px solid $card-border-color;
   border-bottom: 1px solid $card-border-color;
 
-  > .title {
+  >.title {
     padding-inline: variables.$default-padding;
     padding-block: 0.7rem;
     background-color: #f9f9f9;
@@ -23,7 +23,7 @@ section.skills {
     display: flex;
     flex-wrap: wrap;
 
-    > * {
+    >* {
       flex: 1 1 50%;
 
       @include media.responsive(tablet) {
@@ -38,11 +38,15 @@ section.skills {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+    background: transparent;
+    transition: 0.1s ease-in-out background;
+
+    &:hover {
+      background: #00000014;
+      cursor: pointer;
+    }
   }
 
-  .button {
-    cursor: pointer;
-  }
 }
 
 .component.skill-box {

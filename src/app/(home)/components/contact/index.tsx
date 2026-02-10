@@ -8,7 +8,11 @@ export default function ContactSection() {
         Entre em contato comigo através do formulário abaixo ou através das
         minhas redes
       </span>
-      <form>
+      <form
+        action="mailto:you@email.com?subject=Contact from Portfolio"
+        method="POST"
+        encType="text/plain"
+      >
         <input type="text" placeholder="Seu nome" />
         <input type="text" placeholder="Seu e-mail" />
         <textarea placeholder="Deixe sua mensagem..." />

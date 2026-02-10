@@ -37,7 +37,7 @@ section.more-about {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 3rem 25%;
+    padding: 3rem 15%;
     background: linear-gradient(90deg, #f0f0f0, #f7e9e9, #ffefe9);
     border-radius: 1rem;
 
@@ -49,6 +49,7 @@ section.more-about {
       background: -webkit-linear-gradient(0deg, #2a2a2a, #82372d, #ff2a2a);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      font-size: 0.9rem;
     }
   }
 }

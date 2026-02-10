@@ -4,6 +4,7 @@ import "./_style.scss";
 import Image from "next/image";
 import SystemContent from "../components/system-content";
 import EndSection from "@/app/(home)/components/end";
+import { LogTopbar } from "./components/log-topbar";
 
 export default function NavegamlogWebPage() {
   return (
@@ -27,6 +28,7 @@ export default function NavegamlogWebPage() {
         }
       >
         <SystemContent>
+          <LogTopbar />
           <div className="card">
             <Image
               src={"/img/system-images/navegamlog-web/cover.png"}
@@ -35,7 +37,7 @@ export default function NavegamlogWebPage() {
               width={1000}
               className="cover"
             />
-            <span className="title">Sobre a Navegam Log</span>
+            <span id="general" className="title">Sobre a Navegam Log</span>
             <p>
               O Navegam Log é uma solução robusta voltada para a gestão e
               inteligência logística. O projeto nasceu da necessidade de
@@ -72,7 +74,7 @@ export default function NavegamlogWebPage() {
             </div>
           </div>
           <div className="card">
-            <span className="title">Discovery & Pesquisa</span>
+            <span id="execution" className="title">Discovery & Pesquisa</span>
             <p>
               O desafio na Navegam Log foi mapear as dores de uma operação com
               múltiplos fluxos de frete. Através de imersão e entrevistas,
@@ -211,7 +213,7 @@ export default function NavegamlogWebPage() {
           </div>
 
           <div className="card">
-            <span className="title">Resultado</span>
+            <span id="result" className="title">Resultado</span>
             <p>
               A estrutura validada ganhou vida em uma interface focada em
               usabilidade e redução de estresse visual.
@@ -244,7 +246,7 @@ export default function NavegamlogWebPage() {
             <h1>Imagens</h1> */}
           </div>
           <div className="card">
-            <span className="title">Conclusão</span>
+            <span id="conclusion" className="title">Conclusão</span>
             <p>
               A implementação do novo ecossistema do Navegam Log não apenas
               resolveu gargalos operacionais, mas transformou-se em uma vantagem

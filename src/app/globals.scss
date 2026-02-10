@@ -9,3 +9,18 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+
+button {
+  transition: 0.1s ease-in-out transform;
+  cursor: pointer;
+  $hover-height: 0.05rem;
+
+  &:hover {
+    transform: translate(0, -$hover-height);
+  }
+
+  &:active {
+    transform: translate(0, $hover-height);
+  }
+}

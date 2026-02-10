@@ -15,16 +15,38 @@ section.showcase {
 }
 
 .component.project-showcase {
-  background-color: green;
-  background-position: 0 0;
-  background-size: cover;
   height: 20rem;
   position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  &:hover {
+    >img {
+      transform: scale(1.05);
+    }
+  }
+
+  img {
+    max-height: 100%;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: 0.2s ease-in-out transform;
+    object-fit: cover;
+    object-position: left;
+  }
+
 
   @include media.responsive(tablet) {
     width: 95%;
     min-width: 95%;
     scroll-snap-align: start;
+
+    &:hover {
+      >img {
+        filter: brightness(0.8);
+      }
+    }
   }
 
   &::after {
