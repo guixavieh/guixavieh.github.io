@@ -44,7 +44,7 @@ function Fixed() {
   return (
     <div className="home-page fixed">
       <section className="about">
-        <h1>Guilherme paiva Xavier</h1>
+        <h1>Guilherme Xavier</h1>
         <span>UX/UI Designer</span>
         <div className="tags">
           <SkillTag>Mobile & Web</SkillTag>

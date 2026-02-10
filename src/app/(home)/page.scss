@@ -24,6 +24,7 @@ $card-border-color: #e9e9e9;
         letter-spacing: 2px;
         font-weight: 700;
         font-size: 2rem;
+        text-transform: uppercase;
       }
 
       >span {
@@ -36,6 +37,7 @@ $card-border-color: #e9e9e9;
         gap: 0.3rem;
         margin-block: 1rem;
         font-size: 0.6rem;
+        color: #707070;
       }
 
       p.about {
@@ -117,8 +119,7 @@ $card-border-color: #e9e9e9;
       display: flex;
       align-items: center;
       gap: 0.5rem;
-
-
+      background-color: #FCFCFC;
     }
 
     .component.software {
