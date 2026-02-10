@@ -2,12 +2,10 @@ import type { NextConfig } from "next";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
+  output: 'export',
   images: {
-    unoptimized: true,
+    unoptimized: true, // required for GitHub Pages
   },
-  basePath: "/guixavieh.github.io",
-  assetPrefix: "/guixavieh.github.io/",
 };
 
 module.exports = nextConfig;
