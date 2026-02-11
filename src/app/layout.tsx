@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Libre_Baskerville, Sora } from "next/font/google";
+import { Libre_Baskerville, Sora, League_Gothic } from "next/font/google";
 import "./globals.scss";
 import "@/scss/reset.css";
 import "./_style.scss";
-import { leagueGothic } from "@/fonts";
+// import { leagueGothic } from "@/fonts";
 
 const sora = Sora({
   subsets: ["latin"],
@@ -15,7 +15,10 @@ const libreBaskerville = Libre_Baskerville({
   display: "swap",
 });
 
-
+const leagueGothic = League_Gothic({
+  subsets: ["latin"],
+  display: "swap",
+})
 
 export const metadata: Metadata = {
   title: "Guilherme Xavier",
